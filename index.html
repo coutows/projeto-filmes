@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto Cine — Inscrição</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-form">
+<div class="bg-glow"></div>
+<main class="container">
+  <section class="card form-card">
+    <div class="brand">
+      <div class="logo">▶</div>
+      <span>PROJETO <b>CINE</b></span>
+    </div>
+
+    <div class="hero">
+      <span class="tag">INSCRIÇÕES ABERTAS</span>
+      <h1>Entre para o<br><span>Projeto de Filmes.</span></h1>
+      <p>Participe de uma experiência cinematográfica criada para aprender, produzir e compartilhar.</p>
+    </div>
+
+    <form id="formulario">
+      <div class="campo">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
+      </div>
+      <div class="grid">
+        <div class="campo">
+          <label for="turma">Série / Turma</label>
+          <input type="text" id="turma" placeholder="Ex.: 2º Informática" autocomplete="off" required>
+        </div>
+        <div class="campo">
+          <label for="matricula">Matrícula</label>
+          <input type="text" id="matricula" placeholder="Número" autocomplete="off" required>
+        </div>
+      </div>
+
+      <div class="aviso">
+        <span>⚠</span>
+        <div><strong>Simulação educativa</strong><p>Use somente dados fictícios. Nenhuma informação será armazenada ou enviada.</p></div>
+      </div>
+
+      <button type="submit">Enviar inscrição <span>→</span></button>
+    </form>
+
+    <footer>Projeto escolar de Segurança da Informação · 2026</footer>
+  </section>
+</main>
+<script>
+document.getElementById("formulario").addEventListener("submit", function(event) {
+  event.preventDefault();
+  window.location.href = "alerta.html";
+});
+</script>
+</body>
+</html>
