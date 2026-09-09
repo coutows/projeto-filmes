@@ -2,9 +2,6 @@
 
 <div align="center">
 
-### 🛡️ Projeto Educativo de Segurança da Informação
-
-**Uma simulação interativa para demonstrar como ataques de phishing podem enganar usuários.**
 
 </div>
 
