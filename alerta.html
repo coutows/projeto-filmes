@@ -1,57 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alerta — Simulação de Phishing</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alerta — Simulação de Phishing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="pagina-alerta">
-<div class="bg-glow"></div>
-<main class="container">
-<section class="card alerta-card">
-  <div class="status"><div class="pulse">!</div><span>SIMULAÇÃO CONCLUÍDA</span></div>
-  <h1>Você caiu em uma<br><span>simulação de phishing.</span></h1>
-  <p class="lead">Calma — seus dados <strong>não foram armazenados</strong>.</p>
+  <div class="bg-glow"></div>
+  <main class="container">
+    <section class="card alerta-card">
+      <div class="status">
+        <div class="pulse">!</div><span>SIMULAÇÃO CONCLUÍDA</span>
+      </div>
+      <h1>Você caiu em uma<br><span>simulação de phishing.</span></h1>
+      <p class="lead">Calma — seus dados <strong>não foram armazenados</strong>.</p>
 
-  <div class="explicacao">
-    <div class="section-icon">🎓</div>
-    <div>
-      <h2>O que aconteceu?</h2>
-      <p>A página anterior foi criada para demonstrar como uma página aparentemente legítima pode induzir alguém a fornecer informações.</p>
-      <p>Esse tipo de golpe é conhecido como <strong>phishing</strong>. A melhor defesa é parar, conferir e pensar antes de enviar qualquer informação.</p>
-    </div>
-  </div>
+      <div class="explicacao">
+        <div class="section-icon">🎓</div>
+        <div>
+          <h2>O que aconteceu?</h2>
+          <p>A página anterior foi criada para demonstrar como uma página aparentemente legítima pode induzir alguém a
+            fornecer informações.</p>
+          <p>Esse tipo de golpe é conhecido como <strong>phishing</strong>. A melhor defesa é parar, conferir e pensar
+            antes de enviar qualquer informação.</p>
+        </div>
+      </div>
 
-  <h2 class="section-title">🛡 Como se proteger</h2>
-  <div class="dicas">
-    <article><b>01</b><div><h3>Confira o endereço</h3><p>Observe o domínio e confirme se o site realmente pertence à organização.</p></div></article>
-    <article><b>02</b><div><h3>Desconfie da urgência</h3><p>Mensagens que pressionam você a agir rapidamente merecem atenção.</p></div></article>
-    <article><b>03</b><div><h3>Proteja seus dados</h3><p>Evite informar dados pessoais em páginas desconhecidas ou suspeitas.</p></div></article>
-    <article><b>04</b><div><h3>Verifique os links</h3><p>Antes de clicar, confira para onde o link realmente direciona.</p></div></article>
-  </div>
+      <h2 class="section-title">🛡 Como se proteger</h2>
+      <div class="dicas">
+        <article><b>01</b>
+          <div>
+            <h3>Confira o endereço</h3>
+            <p>Observe o domínio e confirme se o site realmente pertence à organização.</p>
+          </div>
+        </article>
+        <article><b>02</b>
+          <div>
+            <h3>Desconfie da urgência</h3>
+            <p>Mensagens que pressionam você a agir rapidamente merecem atenção.</p>
+          </div>
+        </article>
+        <article><b>03</b>
+          <div>
+            <h3>Proteja seus dados</h3>
+            <p>Evite informar dados pessoais em páginas desconhecidas ou suspeitas.</p>
+          </div>
+        </article>
+        <article><b>04</b>
+          <div>
+            <h3>Verifique os links</h3>
+            <p>Antes de clicar, confira para onde o link realmente direciona.</p>
+          </div>
+        </article>
+      </div>
 
-  <div class="video-box">
-    <div class="video-heading"><span>▶</span><div><h2>Aprenda sobre phishing</h2><p>Vídeo educativo — Curso em Vídeo</p></div></div>
-    <div class="iframe-wrap">
-      <iframe
-  src="https://www.youtube.com/embed/2HOZubaXhaA"
-  title="Como não cair em um golpe digital"
-  loading="lazy"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen>
-</iframe>
-    </div>
-    <p class="video-note">Se o vídeo não carregar, verifique sua conexão ou abra o vídeo diretamente no YouTube.</p>
-  </div>
+      <h2 class="section-title">🔍 Indícios de Phishing identificados</h2>
+      <div class="indicios-lista">
 
-  <a class="voltar" href="index.html">← Voltar para a simulação</a>
-  <footer>Projeto escolar de Segurança da Informação · Simulação educativa · 2026</footer>
-</section>
-</main>
+        <article class="indicio-card">
+          <div class="indicio-conteudo">
+            <b>01</b>
+            <div>
+              <h3>Domínio e endereço não oficial</h3>
+              <p>O site está hospedado em um endereço de testes/desenvolvimento ou plataforma gratuita (como
+                <code>github.io</code>), em vez de utilizar o domínio oficial da instituição (<code>ifro.edu.br</code>).
+              </p>
+            </div>
+          </div>
+          <div class="imagem-container">
+            <!-- COLOQUE SUA IMAGEM DO INDICIO 1 AQUI -->
+            <img src="indicios/link.png" alt="Indício 1 - Domínio não oficial">
+          </div>
+        </article>
+
+        <article class="indicio-card">
+          <div class="indicio-conteudo">
+            <b>02</b>
+            <div>
+              <h3>Solicitação indevida de dados pessoais</h3>
+              <p>O formulário solicita informações sensíveis do aluno (como <strong>Nome completo</strong>,
+                <strong>Matrícula</strong> e <strong>Turma</strong>) sem exigir login nem autenticação oficial.</p>
+            </div>
+          </div>
+          <div class="imagem-container">
+            <!-- COLOQUE SUA IMAGEM DO INDICIO 2 AQUI -->
+            <img src="indicios/dados_pessoais.png" alt="Indício 2 - Coleta de dados sensíveis">
+          </div>
+        </article>
+
+        <article class="indicio-card">
+          <div class="indicio-conteudo">
+            <b>03</b>
+            <div>
+              <h3>Uso indevido da marca e gatilho de urgência</h3>
+              <p>A página utiliza o nome da instituição ("CINE IFRO") e o selo "Inscrições Abertas" para criar um senso
+                de oportunidade e urgência, induzindo o usuário a preencher rapidamente sem checar a origem.</p>
+            </div>
+          </div>
+          <div class="imagem-container">
+            <!-- COLOQUE SUA IMAGEM DO INDICIO 3 AQUI -->
+            <img src="indicios/logo.png" alt="Indício 3 - Uso de marca e urgência">
+          </div>
+        </article>
+
+      </div>
+
+      <div class="video-box">
+        <div class="video-heading"><span>▶</span>
+          <div>
+            <h2>Aprenda sobre phishing</h2>
+            <p>Vídeo educativo — Curso em Vídeo</p>
+          </div>
+        </div>
+        <div class="iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/2HOZubaXhaA" title="Como não cair em um golpe digital"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+        <p class="video-note">Se o vídeo não carregar, verifique sua conexão ou abra o vídeo diretamente no YouTube.</p>
+      </div>
+
+      <a class="voltar" href="index.html">← Voltar para a simulação</a>
+      <footer>Projeto escolar de Segurança da Informação · Simulação educativa · 2026</footer>
+    </section>
+  </main>
 </body>
+
 </html>
